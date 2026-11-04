@@ -14,11 +14,11 @@ mkdir ilqr_planner
 mkdir pylqr_planner
 
 cd ilqr_planner
-cmake ../../ilqr_planner -DCMAKE_BUILD_TYPE=Release
+cmake ../../ilqr_planner -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=OFF
 make -j $num_thread
 sudo make install
 
 cd ../pylqr_planner
-cmake ../../pylqr_planner -DCMAKE_BUILD_TYPE=Release
+cmake ../../pylqr_planner -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTS=OFF
 make -j $num_thread
 make install
